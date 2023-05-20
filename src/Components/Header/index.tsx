@@ -1,18 +1,23 @@
-import search from '../../assets/search-icon.svg'
 import person from '../../assets/person-icon.svg'
 import exit from '../../assets/exit-icon.svg'
 import logo from '../../assets/logo.svg'
 
+import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+
+
+} from '@chakra-ui/react'
 import styles from './index.module.css'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 export const Header = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.navbar}>
 
-                <a href="#">
-                    <img src={search} alt="icone de lupa" />
-                </a>
 
                 <article className={styles.navbar_group}>
                     <a className={styles.navbar_option_selected} href="#">Início</a>
@@ -38,8 +43,30 @@ export const Header = () => {
                         <img src={exit} alt="icone de porta" />
                     </a>
                 </article>
+                <article className={styles.hamburger_container}>
+                    <Menu>
+                        <MenuButton >
+                            <HamburgerIcon className={styles.hamburger_icon} />
+                        </MenuButton>
+                        <MenuList>
+                            <MenuItem >
+                                <a href="#" className={styles.menu_item}>
+                                    <img src={person} alt="icone de pessoa" />
+                                    <span>Login</span>
+                                </a>
+                            </MenuItem>
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img src={exit} alt="icone de porta" />
+                                    <span>Cadastrar</span>
+                                </a>
+                            </MenuItem>
+                        </MenuList>
+                    </Menu>
+                </article>
+
             </nav>
-        </header>
+        </header >
     )
 
 }

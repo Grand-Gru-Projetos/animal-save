@@ -64,6 +64,51 @@
     display: flex;
 }
 
+.hamburger_container {
+    display: none;
+}
+
 .logo {
     width: 125.6px;
 }
+
+
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+
+    .login_options {
+
+        display: none;
+    }
+
+    .hamburger_container {
+        display: flex;
+        margin-left: 22px;
+
+    }
+
+    .hamburger_icon {
+        display: flex;
+        font-size: 20px;
+    }
+
+    .menu_item {
+        display: flex;
+        gap: 16px;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar_group {
+        gap: 12px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 640px) {}
