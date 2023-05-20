@@ -111,4 +111,43 @@
 
 
 
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+
+    .login_options {
+
+        display: none;
+    }
+
+    .hamburger_container {
+        display: flex;
+        margin-left: 22px;
+
+    }
+
+    .hamburger_icon {
+        display: flex;
+        font-size: 24px;
+    }
+
+    .menu_item {
+        display: flex;
+        gap: 16px;
+    }
+
+    .navbar {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .navbar_group {
+        display: none;
+    }
+
+    .menu_tablet {
+        display: none;
+    }
+
+    .icons_menu {
+        width: 18px;
+    }
+}

@@ -1,6 +1,12 @@
 import person from '../../assets/person-icon.svg'
 import exit from '../../assets/exit-icon.svg'
 import logo from '../../assets/logo.svg'
+import house from '../../assets/house.svg'
+import projects from '../../assets/projector-screen-chart.svg'
+import partners from '../../assets/users-three.svg'
+import services from '../../assets/package.svg'
+import about_us from '../../assets/users-four.svg'
+import contact from '../../assets/phone.svg'
 
 import {
     Menu,
@@ -12,6 +18,7 @@ import {
 } from '@chakra-ui/react'
 import styles from './index.module.css'
 import { HamburgerIcon } from '@chakra-ui/icons'
+
 
 export const Header = () => {
     return (
@@ -49,6 +56,7 @@ export const Header = () => {
                             <HamburgerIcon className={styles.hamburger_icon} />
                         </MenuButton>
                         <MenuList>
+
                             <MenuItem >
                                 <a href="#" className={styles.menu_item}>
                                     <img src={person} alt="icone de pessoa" />
@@ -61,6 +69,50 @@ export const Header = () => {
                                     <span>Cadastrar</span>
                                 </a>
                             </MenuItem>
+
+
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img className={styles.icons_menu} src={house} alt="icone de porta" />
+                                    <span>Início</span>
+                                </a>
+                            </MenuItem>
+
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img className={styles.icons_menu} src={projects} alt="icone de projetos" />
+                                    <span>Projetos</span>
+                                </a>
+                            </MenuItem>
+
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img className={styles.icons_menu} src={partners} alt="icone de parceiros" />
+                                    <span>Parceiros</span>
+                                </a>
+                            </MenuItem>
+
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img className={styles.icons_menu} src={services} alt="icone de porta" />
+                                    <span>Serviços</span>
+                                </a>
+                            </MenuItem>
+
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img className={styles.icons_menu} src={about_us} alt="icone de porta" />
+                                    <span>Sobre nós</span>
+                                </a>
+                            </MenuItem>
+
+                            <MenuItem>
+                                <a href="#" className={styles.menu_item}>
+                                    <img className={styles.icons_menu} src={contact} alt="icone de porta" />
+                                    <span>Contato</span>
+                                </a>
+                            </MenuItem>
+
                         </MenuList>
                     </Menu>
                 </article>
