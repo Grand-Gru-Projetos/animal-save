@@ -84,3 +84,38 @@
     color: #C8FFA6;
 
 }
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+    .section_container {
+
+        background-image: none;
+        justify-content: center;
+
+    }
+
+    .information_container {
+
+        gap: 23px;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+    .section_container {
+
+        background-image: none;
+        justify-content: center;
+
+    }
+
+    .information_container {
+
+        gap: 23px;
+        margin-left: 0;
+    }
+
+}
