@@ -1,17 +1,69 @@
-.header{
+.header {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #ffffff;
+    height: 104px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 80%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.navbar_item{
+.navbar_group {
     display: flex;
     gap: 30px;
+}
+
+.navbar_option_selected {
+    text-decoration: underline !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+
+.navbar_group a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #81B266;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar_group a::before {
+    content: '';
+    background: #81B266;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar_group a:hover {
+    background-position: 0;
+    color: #000;
+}
+
+.navbar_group a:hover::before {
+    width: 100%;
+}
+
+.login_options {
+    gap: 18px;
+    display: flex;
+}
+
+.logo {
+    width: 125.6px;
 }
