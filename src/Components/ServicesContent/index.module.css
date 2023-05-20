@@ -1,0 +1,52 @@
+.section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 76px;
+    height: 67px;
+}
+
+.description_value {
+    display: flex;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+
+    color: var(--dark-green);
+    text-align: center;
+    width: 200px;
+    margin: 0;
+
+}
+
+.title_value{
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+
+    margin-top: 10px;
+    color: var(--dark-green);
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .description_value {
+
+        font-size: 15px;
+        width: 300px;
+        margin-bottom: 5%;
+
+    }
+
+    .title_value {
+        font-size: 20px;
+    }
+}

@@ -7,7 +7,6 @@ import partners from '../../assets/users-three.svg'
 import services from '../../assets/package.svg'
 import about_us from '../../assets/users-four.svg'
 import contact from '../../assets/phone.svg'
-
 import {
     Menu,
     MenuButton,
