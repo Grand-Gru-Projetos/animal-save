@@ -1,0 +1,17 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar_item{
+    display: flex;
+    gap: 30px;
+}
