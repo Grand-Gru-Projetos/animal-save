@@ -7,6 +7,7 @@ import { ContentServices } from './Components/ServicesTitle'
 import { BeProtector } from './Components/BeProtector'
 import { Footer } from './Components/Footer'
 import { PartnerSection } from './Components/Partner'
+import { BestFrind } from './Components/BestFriend'
 
 
 function App() {
@@ -19,9 +20,9 @@ function App() {
       <ContentServices />
       <ProjectsSection />
       <BeProtector />
-      <PartnerSection/>
+      <PartnerSection />
+      <BestFrind />
       <Footer />
-
 
 
     </>
