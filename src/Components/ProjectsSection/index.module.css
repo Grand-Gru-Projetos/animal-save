@@ -40,7 +40,7 @@ color: #353F2F;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: calc(550px - 130px);
+    min-height: calc(680px - 130px);
     height: auto;
 
 }
@@ -92,6 +92,9 @@ button{
 
 
 @media only screen and (max-width: 640px) {
+    .title{
+        font-size: 30.4px;
+    }
 
     .container .carousel {
         max-width: 60vw;

@@ -5,9 +5,11 @@
 :root {
   font-family: 'Roboto';
 
+  --white: #FFFF;
   --light-green: #E1FFD1;
   --dark-green: #374231;
   --midle-green: #496F35;
+  --midle-light-green: #81B266;
 }
 
 body {
