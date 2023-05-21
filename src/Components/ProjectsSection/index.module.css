@@ -4,7 +4,7 @@
     justify-content: center;
   }
   .container .carousel {
-    max-width: 70vw;
+    max-width: 56vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
