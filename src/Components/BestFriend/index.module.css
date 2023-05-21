@@ -24,7 +24,7 @@
     font-size: 38.4px;
 
     text-transform: capitalize;
-
+    text-align: center;
     color: #374231;
 }
 
@@ -65,5 +65,35 @@
 
 
     color: #DAF0CE;
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {}
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+    .title {
+        font-size: 28.4px;
+        text-align: center;
+        color: #374231;
+        width: 290px;
+    }
+
+    .title_highlight {
+        font-size: 28.4px;
+        text-transform: capitalize;
+
+        color: #496F35;
+    }
+
+    .information {
+
+        width: 269px;
+
+
+    }
 
 }
