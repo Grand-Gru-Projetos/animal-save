@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Roboto';
+
+  --white: #FFFF;
+  --light-green: #E1FFD1;
+  --dark-green: #374231;
+  --midle-green: #496F35;
+  --midle-light-green: #81B266;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

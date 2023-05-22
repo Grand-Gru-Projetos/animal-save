@@ -1,0 +1,103 @@
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .container .carousel {
+    max-width: 56vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+.project{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2px;
+line-height: 29px;
+/* identical to box height */
+
+color: #353F2F;
+}
+.flexDescription{
+    display:flex;
+    justify-content: center;
+}
+  .container .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38.4px;
+    line-height: 47px;
+    color: #496F35;
+    margin-top: 89.6px;
+  }
+.allScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(680px - 130px);
+    height: auto;
+
+}
+  
+  .container .carousel .item {
+    margin-right: 24px;
+    width: 246px;
+    flex: none;
+  }
+  
+.DogImg {
+    width: 246px;
+    height: 246px;
+    object-fit: cover;
+  }
+  
+  .container .carousel .item .info {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container .carousel .item .info span {
+    display: block;
+    text-align: center;
+    color: #1e1e1e;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .mainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23.4px;
+  }
+  
+button{
+    height: 46.4px;
+    width: 46.4px;
+}
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+
+    .container .carousel {
+        max-width: 64vw;
+      }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    .title{
+        font-size: 30.4px;
+    }
+
+    .container .carousel {
+        max-width: 60vw;
+      }
+
+}

@@ -1,0 +1,126 @@
+.section_container {
+    background: linear-gradient(298.2deg, rgba(55, 66, 49, 0.2) 28.63%, rgba(0, 0, 0, 0) 96.07%, rgba(239, 252, 231, 0.108) 96.07%), #81B266;
+
+    min-height: calc(100vh - 104px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-image: url('../../assets/banner-image.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.information_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 23px;
+    margin-left: 10vw;
+}
+
+.banner_title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38.4px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 276px;
+}
+
+.button_container {
+    gap: 19px;
+    display: flex;
+}
+
+.banner_content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+    width: 380px;
+
+}
+
+.button_light_green {
+    width: 160.8px;
+    height: 41.6px;
+    background: #C8FFA6;
+    box-shadow: 0px 0px 16px #C8FFA6;
+    border-radius: 88px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.2px;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.button_transparent {
+    width: 160.8px;
+    height: 41.6px;
+    border: 1.6px solid #C8FFA6;
+    border-radius: 88px;
+    background: transparent;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.2px;
+
+    text-align: center;
+
+    color: #C8FFA6;
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+    .section_container {
+
+        background-image: none;
+        justify-content: center;
+
+    }
+
+    .information_container {
+
+        gap: 23px;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+    .section_container {
+
+        background-image: none;
+        justify-content: center;
+
+    }
+
+    .information_container {
+
+        gap: 23px;
+        margin-left: 0;
+    }
+
+    .banner_content {
+        width: 320px;
+
+    }
+
+}
