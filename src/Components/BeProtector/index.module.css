@@ -4,7 +4,7 @@
     align-items: center;
 
     background: var(--midle-light-green);
-    min-height: calc(100vh - 90px);
+    min-height: calc(85vh - 90px);
     height: auto;
 }
 
