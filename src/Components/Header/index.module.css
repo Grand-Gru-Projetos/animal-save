@@ -85,14 +85,15 @@
     }
 
     .hamburger_container {
-        display: flex;
+        display: block;
         margin-left: 22px;
 
     }
 
+
     .hamburger_icon {
         display: flex;
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .menu_item {
@@ -106,6 +107,12 @@
 
     .navbar_group {
         gap: 12px;
+    }
+    .navbar_group {
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
     }
 }
 
