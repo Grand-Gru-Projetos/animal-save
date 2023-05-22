@@ -69,7 +69,7 @@ export const Header = () => {
                                 </a>
                             </MenuItem>
 
-
+                       
                             <MenuItem>
                                 <a href="#" className={styles.menu_item}>
                                     <img className={styles.icons_menu} src={house} alt="icone de porta" />
@@ -111,7 +111,7 @@ export const Header = () => {
                                     <span>Contato</span>
                                 </a>
                             </MenuItem>
-
+                       
                         </MenuList>
                     </Menu>
                 </article>
