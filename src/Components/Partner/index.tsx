@@ -1,18 +1,14 @@
-import { useEffect, useState } from 'react'
+
 import styles from './index.module.css'
 import WhiteCat from '../../assets/whiteCat.svg'
 import lojinha from '../../assets/lojinha.svg'
-
+import partner1 from '../../assets/Partner1.svg'
+import partner2 from '../../assets/Partner2.svg'
+import partner3 from '../../assets/Partner3.svg'
+import partner4 from '../../assets/Partner4.svg'
 
 export const PartnerSection = () => {
 
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:5173/src/partners.json')
-            .then((Response) => Response.json())
-            .then(setData);
-    }, []);
 
     return (
         <div className={styles.allScreen}>
@@ -21,14 +17,20 @@ export const PartnerSection = () => {
                 <div className={styles.mainSection}>
                     <div className={styles.container}>
                         <div className={styles.partners}>
-                            {data.map((item) => {
-                                const { id, url } = item;
-                                return (
-                                    <div className={styles.item} key={id}>
-                                        <img className={styles.DogImg} src={url} alt="imagem de um parceiro" />
+                            
+                                    <div className={styles.item}>
+                                        <img className={styles.DogImg} src={partner1} alt="imagem de um parceiro" />
                                     </div>
-                                );
-                            })}
+                                    <div className={styles.item}>
+                                        <img className={styles.DogImg} src={partner2} alt="imagem de um parceiro" />
+                                    </div>
+                                    <div className={styles.item}>
+                                        <img className={styles.DogImg} src={partner3} alt="imagem de um parceiro" />
+                                    </div>
+                                    <div className={styles.item}>
+                                        <img className={styles.DogImg} src={partner4} alt="imagem de um parceiro" />
+                                    </div>
+                         
                         </div>
                     </div>
                 </div>
