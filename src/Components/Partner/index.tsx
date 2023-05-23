@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './index.module.css'
-
+import WhiteCat from '../../assets/whiteCat.svg'
+import lojinha from '../../assets/lojinha.svg'
 
 
 export const PartnerSection = () => {
@@ -33,11 +34,11 @@ export const PartnerSection = () => {
                 </div>
             </div>
             <div className={styles.catPart}>
-                <img className={styles.whiteCat} src="/assets/whiteCat.svg" alt='gato branco acenando' />
+                <img className={styles.whiteCat} src={WhiteCat} alt='gato branco acenando' />
 
                 <div className={styles.allArticle}>
                     <div className={styles.textAndImage}>
-                        <img className={styles.storeImg} src='/assets/lojinha.svg' alt='logo de lojinha' />
+                        <img className={styles.storeImg} src={lojinha} alt='logo de lojinha' />
                         <h1 className={styles.isCompany}>É uma empresa?</h1>
                     </div>
                     <div className={styles.titleAndDescription}>
