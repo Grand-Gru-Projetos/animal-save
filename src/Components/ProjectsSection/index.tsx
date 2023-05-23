@@ -3,17 +3,16 @@ import { useEffect, useRef, useState } from 'react'
 import styles from './index.module.css'
 import leftArrow from '../../assets/LeftArrow.svg'
 import rightArrow from '../../assets/RightArrow.svg'
-
+import dog1 from '../../assets/Dog1.svg'
+import dog2 from '../../assets/Dog2.svg'
+import dog3 from '../../assets/Dog3.svg'
+import dog4 from '../../assets/Dog4.svg'
 
 export const ProjectsSection = () => {
 
-    const [data, setData] = useState([]);
+
     const carousel = useRef<HTMLDivElement>(null);
-    useEffect(() => {
-        fetch('http://localhost:5173/src/dogs.json')
-            .then((Response) => Response.json())
-            .then(setData);
-    }, []);
+
 
     const handleLeftClick = () => {
         if (carousel.current) {
@@ -34,17 +33,72 @@ export const ProjectsSection = () => {
                 <button onClick={handleLeftClick}><img src={leftArrow} /></button>
                 <div className={styles.container}>
                     <div className={styles.carousel} ref={carousel}>
-                        {data.map((item) => {
-                            const { id, url, description } = item;
-                            return (
-                                <div className={styles.item} key={id}>
-                                    <img className={styles.DogImg} src={url} alt="um cachorro qualquer" />
+                        
+                          
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog1} alt="um cachorro qualquer" />
                                     <div className={styles.flexDescription}>
-                                        <span className={styles.project}>{description}</span>
+                                        <span className={styles.project}>Lorem Impsun</span>
                                     </div>
                                 </div>
-                            );
-                        })}
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog2} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog4} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog1} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog2} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog4} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog1} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog2} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+
+                                <div className={styles.item}>
+                                    <img className={styles.DogImg} src={dog4} alt="um cachorro qualquer" />
+                                    <div className={styles.flexDescription}>
+                                        <span className={styles.project}>Lorem Impsun</span>
+                                    </div>
+                                </div>
+                           
+                        
                     </div>
 
 
