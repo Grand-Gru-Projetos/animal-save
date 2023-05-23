@@ -1,7 +1,9 @@
 import styles from './index.module.css'
 import Logo_paw from '../../assets/Logo_paw.svg'
 import { ServicesContents } from '../ServicesContent/index'
-
+import atendimento from '../../assets/atendimento_imediato.svg'
+import cuidados from '../../assets/cuidados_clinicos.svg'
+import lar from '../../assets/lar_temporario.svg'
 
 
 export const ContentServices = () => {
@@ -14,19 +16,19 @@ export const ContentServices = () => {
             <section className={styles.section_container_services}>
                 <article>
                     <ServicesContents
-                        image="/assets/atendimento_imediato.svg"
+                        image={atendimento}
                         title='Atendimento imediato'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
                 </article>
                 <article>
                     <ServicesContents
-                        image="/assets/cuidados_clinicos.svg"
+                        image={cuidados}
                         title='Cuidados clínicos'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
                 </article>
                 <article>
                     <ServicesContents
-                        image="/assets/lar_temporario.svg"
+                        image={lar}
                         title='Lar temporário'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
                 </article>

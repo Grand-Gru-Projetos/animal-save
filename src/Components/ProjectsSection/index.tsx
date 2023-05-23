@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useEffect, useRef, useState } from 'react'
 import styles from './index.module.css'
-
+import leftArrow from '../../assets/LeftArrow.svg'
+import rightArrow from '../../assets/RightArrow.svg'
 
 
 export const ProjectsSection = () => {
@@ -30,7 +31,7 @@ export const ProjectsSection = () => {
         <div className={styles.allScreen}>
             <h1 className={styles.title}>Veja nossos projetos</h1>
             <div className={styles.mainSection}>
-                <button onClick={handleLeftClick}><img src="/assets/LeftArrow.svg" /></button>
+                <button onClick={handleLeftClick}><img src={leftArrow} /></button>
                 <div className={styles.container}>
                     <div className={styles.carousel} ref={carousel}>
                         {data.map((item) => {
@@ -48,7 +49,7 @@ export const ProjectsSection = () => {
 
 
                 </div>
-                <button onClick={handleRightClick}><img src="/assets/RightArrow.svg" /></button>
+                <button onClick={handleRightClick}><img src={rightArrow} /></button>
             </div>
         </div>
     )
