@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+
 import styles from './index.module.css'
 import WhiteCat from '../../assets/whiteCat.svg'
 import lojinha from '../../assets/lojinha.svg'

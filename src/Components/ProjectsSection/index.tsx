@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { useEffect, useRef, useState } from 'react'
 import styles from './index.module.css'
 import leftArrow from '../../assets/LeftArrow.svg'
 import rightArrow from '../../assets/RightArrow.svg'
 import dog1 from '../../assets/Dog1.svg'
 import dog2 from '../../assets/Dog2.svg'
-import dog3 from '../../assets/Dog3.svg'
 import dog4 from '../../assets/Dog4.svg'
+import { useRef } from 'react'
 
 export const ProjectsSection = () => {
 
